@@ -50,7 +50,7 @@ classes_path指向检测类别所对应的txt。**
 训练前将训练集的txt文件放在VOCdevkit文件夹下的VOC2007文件夹下的ImageSets/Main中。
 训练前将测试集的txt文件放在VOCdevkit文件夹下的VOC2007文件夹下的ImageSets/Main中。
 数据集的格式如下：  
-VOCdevkit
+VOCdevkit  
 --VOC2007  
 ----Annotations  
 ------xml files (eg. 000001.xml)  
