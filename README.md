@@ -26,9 +26,9 @@ VOC数据集下载地址如下，里面已经包括了训练集、测试集、�
 提取码: j5ge   
 
 ## 训练步骤
-### a、训练VOC07+12数据集
+### a、训练VOC07数据集
 1. 数据集的准备   
-**本文使用VOC格式进行训练，训练前需要下载好VOC07+12的数据集，解压后放在根目录**  
+**本文使用VOC格式进行训练，训练前需要下载好VOC07的数据集，解压后放在根目录**  
 
 2. 数据集的处理   
 运行voc_annotation.py生成根目录下的2007_train.txt和2007_val.txt。   
@@ -105,8 +105,8 @@ img/street.jpg
 5. 测试fps：设置predict.py里的mode为fps，运行predict.py。
 
 ## 评估步骤 
-### a、评估VOC07+12的测试集
-1. 本文使用VOC格式进行评估。VOC07+12已经划分好了测试集，无需利用voc_annotation.py生成ImageSets文件夹下的txt。
+### a、评估VOC07的测试集
+1. 本文使用VOC格式进行评估。VOC07已经划分好了测试集，无需利用voc_annotation.py生成ImageSets文件夹下的txt。
 2. 在yolo.py里面修改model_path以及classes_path。**model_path指向训练好的权重文件，在logs文件夹里。classes_path指向检测类别所对应的txt。**  
 3. 运行test.py即可获得评估结果，评估结果会保存在map_out文件夹中。
 
